@@ -1,0 +1,101 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Type or Death Game</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.container{
+	 width: 85%;
+        height: auto;
+        margin: auto;
+        margin-top: 75px;
+        background-color: rgba(100, 100, 100, 0.2);
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        
+        font-family: latin, Arial, sans-serif
+    }
+    h1{
+    	font-size: 38px;
+    }
+    p{
+    	font-size: 18px;
+    	color: grey;
+    }
+    .wordContainer {
+        color: red;
+        height: auto;
+        font-size: 4.5em;
+        border-radius: 4px;
+        background-color: white;
+        
+        position: relative;
+        top: 15%;
+      }
+
+</style>
+</head>
+<body>
+	<div class="container">
+		<section>
+			<header>
+				<h1>TYPE OR DEATH</h1>
+			</header>
+			<br>
+			<div class="detailsdisplay">
+				<div class="leveldisplay">
+					<p>LEVEL<div id="level"></div></p>
+				</div>
+				<div class="scoredisplay">
+					<p>YOUR SCORE IS:<div id="score"></div></p>
+				</div>
+			</div>
+		<div class="wordcontainer">
+		<div class="wordDisplay">
+          <div id="words">Ready?</div> 
+        </div>
+    </section>
+        <br>
+        <h2>TYPE WORDS HERE</h2>
+        <div class="form group">
+        	<input type="text">
+        </div>
+        <br>
+        <div class="buttons">
+        	 <button id="start" class="btn btn-primary" onclick="startGame()">Click to Start</button>
+        <button id="restart" class="btn btn-primary" onclick="restartGame()">Restart</button>
+        <button id="end" class="btn btn-danger" onclick="endGame()">End Game</button>
+      </div>
+      <script>
+      	function startGame(start){
+      		alert("better luck next tym,ur score is 0 points");
+      	}
+      	function restartGame(restart){
+      		alert("try again");
+      	}
+      	function endGame(end){
+      		alert("game over");
+      	}
+      </script>
+  </body>
+  </html>
+  
+   
+  
+
+      
+
+
